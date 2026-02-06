@@ -16,7 +16,7 @@ This program determines the ranges of various data types (char, short, int, long
 * How to use specific format specifiers like `%lu` for unsigned long to avoid compiler warnings.
 * The logic of **Two's Complement** and how bitwise operations interact with hardware memory limits.
 
-Section 2.3: Constants
+### Section 2.3: Constants
 This section explores how C handles fixed values, ranging from simple integers to complex string literals and enumeration constants.
 
 Key Concepts Covered:
