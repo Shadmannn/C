@@ -1,4 +1,4 @@
-# K&R C Solutions
+# K&R C 
 
 This repository contains my personal solutions and experiments as I work through the classic book **"The C Programming Language" (2nd Edition)** by Brian Kernighan and Dennis Ritchie.
 
