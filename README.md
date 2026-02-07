@@ -1,4 +1,4 @@
-# 📚 Learning C: The K&R Path
+# Learning C: The K&R Path
 > **"The only way to learn a new programming language is by writing programs in it."**
 
 ---
