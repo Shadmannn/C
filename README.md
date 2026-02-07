@@ -11,16 +11,6 @@ No IDEs. No shortcuts. Just **Vim**, **GCC**, and **Logic**.
 ---
 
 
-### **Core Focus Areas**
-1. **Memory Architecture:** Investigating how different data types (char, int, long) occupy space on **64-bit systems**.
-2. **String Mechanics:** Deep-diving into the **null-terminator (`\0`)** and manual traversal of memory blocks.
-3. **Optimization:** Comparing standard library functions against **custom-built implementations** (like `my_strlen`).
-4. **System Integrity:** Writing **defensive code** to prevent memory leaks and logical overflows.
-
-
-
----
-
 ### **How to Compile & Run**
 To maintain **system integrity**, I compile manually through the terminal:
 
