@@ -10,13 +10,6 @@ No IDEs. No shortcuts. Just **Vim**, **GCC**, and **Logic**.
 
 ---
 
-### **The Technical Environment**
-* **Operating System:** Fedora Linux 
-* **Development Editor:** Vim (The power-user's choice)
-* **Compiler Stack:** `gcc` with strict flags (`-Wall -Wextra`)
-* **Commit Strategy:** Every file is **annotated** to explain memory behavior and pointer logic.
-
----
 
 ### **Core Focus Areas**
 1. **Memory Architecture:** Investigating how different data types (char, int, long) occupy space on **64-bit systems**.
