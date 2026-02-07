@@ -20,7 +20,4 @@ To maintain **system integrity**, I compile manually through the terminal:
 **2. Execute the Binary:**
 `./output`
 
----
 
-### **The Philosophy**
-**Efficiency** is everything. I treat my brain like a CPU—focusing only on **Localhost** (what I can control) and filtering out the **Noise** (what I cannot).
