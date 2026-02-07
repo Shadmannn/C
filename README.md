@@ -5,7 +5,7 @@
 ---
 
 ### **Overview**
-This repository is a **deep-dive** into the foundational logic of the C programming language. I am manually implementing every exercise from the classic **Kernighan and Ritchie (K&R)** text to master the "source code" of computing. 
+This repository is a **deep-dive** into the foundational logic of the C programming language. I am manually implementing every topic & exercise from the classic **Kernighan and Ritchie (K&R)** text to master the "source code" of computing. 
 
 No IDEs. No shortcuts. Just **Vim**, **GCC**, and **Logic**.
 
