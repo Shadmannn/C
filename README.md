@@ -1,4 +1,5 @@
-# Learning C: The K&R Path
+# C Programming
+**Following C Programming Language, Second edition by Brian Kernighan and Dennis Ritchie.
 > **"The only way to learn a new programming language is by writing programs in it."**
 
 ---
