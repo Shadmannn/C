@@ -1,5 +1,5 @@
 # C Programming Language
-Book: C Programming Language, Second edition by Brian Kernighan and Dennis Ritchie.
+**Book:** C Programming Language, Second edition by Brian Kernighan and Dennis Ritchie.
 > **"The only way to learn a new programming language is by writing programs in it."**
 
 ---
