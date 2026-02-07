@@ -14,8 +14,6 @@ No IDEs. No shortcuts. Just **Vim**, **GCC**, and **Logic**.
 
 ### **How to Compile & Run**
 To maintain **system integrity**, I compile manually through the terminal:
-
-**Compile & Execute:**
 `gcc -o output filename.c && ./output`
 
 
