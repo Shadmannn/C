@@ -1,0 +1,70 @@
+===============================================================================
+                       C OPERATOR PRECEDENCE TABLE
+===============================================================================
+ Precedence: 1 (Highest) -> 15 (Lowest)
+===============================================================================
+
+Level  Operators                  Description                    Associativity
+-------------------------------------------------------------------------------
+  1    ()                         Function call                  Left-to-right
+       []                         Array subscripting
+       .                          Structure/union member
+       ->                         Structure/union pointer member
+       (type){list}               Compound literal (C99)
+
+  2    ++ --                      Postfix increment / decrement  Right-to-left
+       + -                        Unary plus / minus
+       ! ~                        Logical NOT / Bitwise NOT
+       (type)                     Type cast
+       *                          Indirection (dereference)
+       &                          Address-of
+       sizeof                     Size-of operator
+       _Alignof                   Alignment requirement (C11)
+
+  3    * / %                      Multiplication / Division /    Left-to-right
+                                  Remainder (Modulus)
+
+  4    + -                        Addition / Subtraction         Left-to-right
+
+  5    << >>                      Bitwise left shift / right     Left-to-right
+                                  shift
+
+  6    < <=                       Relational less than /         Left-to-right
+       > >=                       less than or equal to,
+                                  greater than /
+                                  greater than or equal to
+
+  7    == !=                      Equality / Inequality          Left-to-right
+
+  8    &                          Bitwise AND                    Left-to-right
+
+  9    ^                          Bitwise XOR (exclusive OR)     Left-to-right
+
+ 10    |                          Bitwise OR (inclusive OR)      Left-to-right
+
+ 11    &&                         Logical AND                    Left-to-right
+
+ 12    ||                         Logical OR                     Left-to-right
+
+ 13    ?:                         Ternary conditional            Right-to-left
+
+ 14    =                          Simple assignment              Right-to-left
+       += -=                      Compound assignment
+       *= /= %=
+       <<= >>=
+       &= ^= |=
+
+ 15    ,                          Comma operator                 Left-to-right
+
+===============================================================================
+                           KEY PRECEDENCE RULES
+===============================================================================
+1. Primary operators () [] . -> have the highest priority.
+2. Unary operators (! ~ ++ -- * & sizeof) evaluate Right-to-Left.
+3. Arithmetic (* / %) > (+ -) > Bitwise Shifts (<< >>) > Relational (< >).
+4. Relational (< <= > >=) has higher precedence than Equality (== !=).
+5. Bitwise (& ^ |) comes BEFORE Logical (&& ||).
+6. Assignment operators (= += etc.) have very low precedence and evaluate
+   Right-to-Left.
+7. Comma operator (,) has the absolute lowest precedence.
+===============================================================================

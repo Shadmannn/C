@@ -88,7 +88,7 @@ int main() {
      */
     printf("--- 4. Deconstructing the K&R Loop Syntax ---\n");
     printf("Textbook complex loop layout expression:\n");
-    printf("for (i=0; i < lim-1 && (c=getchar()) != '\\n' && c != EOF; ++i)\n\n");
+    printf("for (i=0; i < lim-1 && (c = getchar()) != '\\n' && c != EOF; ++i)\n\n");
 
     /* Let's analyze why parentheses matter here based on K&R text:
      * 1. '!=' has higher precedence than '=' (assignment).
@@ -124,24 +124,24 @@ int main() {
     // DECLARATIONS NEEDED FOR EXERCISE 2.2:
     char s[1000]; // 1000-box buffer to store the user's string
     int c;        // Variable to hold each character read from keyboard
-    int idx = 0;  // Loop index counter
+    int i = 0;  // Loop index counter
     int ok = 1;   // Logic flag: 1 means continue, 0 means stop
-    lim = 1000;   // Buffer size limit
+    limit = 1000;   // Buffer size limit
 
     while (ok) {
-        if (idx >= lim - 1) {
+        if (i >= limit - 1) {
             ok = 0; // Stop! No more room in array s[]
         } else if ((c = getchar()) == '\n') {
             ok = 0; // Stop! User pressed Enter
         } else if (c == EOF) {
             ok = 0; // Stop! Reached End-of-File
         } else {
-            s[idx] = c; // Safe to store character
-            ++idx;
+            s[i] = c; // Safe to store character
+            ++i;
         }
     }
 
-    s[idx] = '\0'; // Add null terminator to complete string
+    s[i] = '\0'; // Add null terminator to complete string
 
     printf("Result saved in s[]: \"%s\"\n", s);
     printf("==================================================\n");
