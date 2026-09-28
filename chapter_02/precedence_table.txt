@@ -68,3 +68,25 @@ Level  Operators                  Description                    Associativity
    Right-to-Left.
 7. Comma operator (,) has the absolute lowest precedence.
 ===============================================================================
+
+================================================================================
+CRITICAL DISTINCTION: PRECEDENCE vs. EVALUATION ORDER
+================================================================================
+
+1. Precedence determines how operators GROUP (e.g., '*' binds tighter than '+').
+2. Precedence does NOT determine WHICH sub-expression runs first in CPU hardware.
+3. C does NOT evaluate left-to-right by default (unlike Java/Python).
+
+ONLY 4 OPERATORS GUARANTEE LEFT-TO-RIGHT EVALUATION (Sequence Points):
+   - Logical AND (&&)
+   - Logical OR  (||)
+   - Conditional Operator (? :)
+   - Comma Operator (,)   [Note: Function argument commas like foo(a,b) do NOT!]
+
+DANGER:
+   - Writing `a[i] = i++` or `f() + g()` causes Undefined Behavior because the
+     compiler can run sub-expressions in any order it finds fastest.
+
+SEE FULL DETAILS & EXAMPLES IN:
+   -> 2.8_increment_decrement_operators.c
+================================================================================
